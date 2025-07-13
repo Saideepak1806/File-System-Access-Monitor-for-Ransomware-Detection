@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Log Events</title></head>
+<body>
+  <h2>Log Events (Admin: {{ admin }})</h2>
+  <ul>
+    {% for log in logs %}
+    <li>{{ log.event }} - {{ log.file }}</li>
+    {% endfor %}
+  </ul>
+  <a href="/dashboard">Back</a>
+</body>
+</html>
